@@ -1,0 +1,72 @@
+{
+	"parent": "minecraft:block/door_bottom_rh",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/birch_door_bottom",
+		"bottom": "block/birch_door_bottom"
+	},
+	"elements": [
+		{
+			"name": "base",
+			"from": [0, 0, 0],
+			"to": [3, 12, 16],
+			"faces": {
+				"north": {"uv": [3, 4, 0, 16], "texture": "#bottom", "cullface": "north"},
+				"east": {"uv": [16, 4, 0, 16], "texture": "#bottom"},
+				"south": {"uv": [13, 4, 16, 16], "texture": "#bottom", "cullface": "south"},
+				"west": {"uv": [0, 4, 16, 16], "texture": "#bottom", "cullface": "west"},
+				"up": {"uv": [13, 0, 16, 16], "texture": "#bottom"},
+				"down": {"uv": [13, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"name": "base",
+			"from": [1, 12, 3],
+			"to": [2, 16, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 12, 8]},
+			"faces": {
+				"north": {"uv": [3, 4, 0, 16], "texture": "#bottom", "cullface": "north"},
+				"east": {"uv": [3, 0, 13, 4], "texture": "#bottom", "cullface": "west"},
+				"south": {"uv": [13, 4, 16, 16], "texture": "#bottom", "cullface": "south"},
+				"west": {"uv": [3, 0, 13, 4], "texture": "#bottom", "cullface": "west"},
+				"up": {"uv": [13, 0, 16, 16], "texture": "#bottom"},
+				"down": {"uv": [13, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"name": "side1",
+			"from": [0, 12, 0],
+			"to": [3, 16, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 12, 8]},
+			"faces": {
+				"north": {"uv": [3, 0, 0, 4], "texture": "#bottom", "cullface": "north"},
+				"east": {"uv": [3, 0, 0, 4], "texture": "#bottom"},
+				"south": {"uv": [13, 0, 16, 4], "texture": "#bottom", "cullface": "south"},
+				"west": {"uv": [0, 0, 3, 4], "texture": "#bottom", "cullface": "west"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#bottom"},
+				"down": {"uv": [13, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"name": "side2",
+			"from": [0, 12, 13],
+			"to": [3, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 12, 21]},
+			"faces": {
+				"north": {"texture": "#bottom", "cullface": "west"},
+				"east": {"texture": "#bottom", "cullface": "west"},
+				"south": {"uv": [13, 0, 16, 4], "texture": "#bottom", "cullface": "south"},
+				"west": {"texture": "#bottom", "cullface": "west"},
+				"up": {"uv": [0, 0, 0, 0], "texture": "#bottom"},
+				"down": {"uv": [13, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "door_bottom",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2, 3]
+		}
+	]
+}
